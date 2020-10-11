@@ -1,0 +1,59 @@
+$primary: rgba(210, 163, 125);
+$component: #aa6639;
+$dark: #302b2f;
+
+.nav-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(210, 163, 125, 0.05);
+  padding: 1em 0;
+
+  a {
+    color: $dark;
+    text-decoration: none;
+  }
+
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+
+    ul {
+      position: absolute;
+      left: 27.5%;
+      list-style-type: none;
+      margin: 0;
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      align-self: center;
+
+      li a {
+        padding: 1em;
+        text-decoration: underline;
+        font-size: 1.2rem;
+
+        &:hover {
+          background: darken($primary, 10%);
+        }
+      }
+    }
+  }
+}
+
+a.logo {
+  position: absolute;
+  right: 5%;
+  margin: 0;
+  font-family: "Dosis", "sans-serif;";
+  font-weight: 200;
+  font-size: 4rem;
+}

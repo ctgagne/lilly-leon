@@ -1,0 +1,71 @@
+$primary: rgba(210, 163, 125);
+$component: #aa6639;
+$dark: #302b2f;
+$light: #fafafa;
+
+.home {
+  display: flex;
+
+  .home-image img {
+    height: 100vh;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    max-width: 900px;
+    margin-left: -4rem;
+
+    h1 {
+      font-family: "Playfair Display", "sans-serif";
+      font-size: 5rem;
+    }
+
+    h3 {
+      margin-top: -3rem;
+      align-self: left;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.home-wrapper {
+  background: #fafafa;
+}
+
+.svg-square {
+  position: absolute;
+  top: 27.5%;
+  right: 0%;
+  z-index: 2;
+}
+
+.svg-square-2 {
+  position: absolute;
+  right: 4.7%;
+  bottom: -25.3%;
+}
+
+.buttons button {
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid $dark;
+  background: $component;
+  color: $light;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.8rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:first-child {
+    margin-right: 25px;
+  }
+  &:nth-child(2) {
+    background: $light;
+    color: $component;
+  }
+}
