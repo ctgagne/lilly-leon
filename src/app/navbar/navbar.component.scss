@@ -38,8 +38,9 @@ header {
 
       li a {
         padding: 1em;
-        text-decoration: underline;
+        border-bottom: 1px solid $dark;
         font-size: 1.2rem;
+        font-weight: 700;
 
         &:hover {
           background: darken($primary, 10%);
