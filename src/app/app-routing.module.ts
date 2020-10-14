@@ -6,11 +6,11 @@ import { LocationComponent } from './location/location.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'location', component: LocationComponent }
+  { path: 'location', component: LocationComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
