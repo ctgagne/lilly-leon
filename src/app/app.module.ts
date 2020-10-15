@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LocationComponent } from './location/location.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
