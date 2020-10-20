@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
-import { LocationComponent } from './location/location.component';
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LocationComponent } from './components/location/location.component';
+import { HomeComponent } from './components/home/home.component';
+import { StoreComponent } from './components/store/store.component';
+import { KcollectionComponent} from './components/kcollection/kcollection.component'
 
 
 @NgModule({
@@ -14,6 +17,9 @@ import { LocationComponent } from './location/location.component';
     NavbarComponent,
     FooterComponent,
     LocationComponent,
+    HomeComponent,
+    StoreComponent,
+    KcollectionComponent
   ],
   imports: [
     BrowserModule,
