@@ -1,0 +1,48 @@
+$primary: #d2a37d;
+$component: #aa6639;
+$dark: #302b2f;
+$light: #f4f5f1;
+$white: #fafafa;
+$brown: #482716;
+$beige: #d5b890;
+$gold: #7c6a51;
+$yellow: #f3af46;
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+}
+
+.map-container {
+  display: flex;
+  width: max-content;
+  background-color: $gold;
+}
+
+iframe {
+  padding: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.address,
+.hours {
+  border: 1px solid $gold;
+  padding: 1rem;
+  margin: 1rem;
+  h4 {
+    padding: 4px 2px;
+    margin: 0;
+    color: $brown;
+  }
+  p {
+    padding: 2px;
+    margin: 0;
+    color: $gold;
+  }
+}

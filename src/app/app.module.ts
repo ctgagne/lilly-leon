@@ -8,7 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LocationComponent } from './components/location/location.component';
 import { HomeComponent } from './components/home/home.component';
 import { StoreComponent } from './components/store/store.component';
-import { KcollectionComponent} from './components/kcollection/kcollection.component'
+import { KcollectionComponent} from './components/kcollection/kcollection.component';
+import { LcollectionComponent } from './components/lcollection/lcollection.component'
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { KcollectionComponent} from './components/kcollection/kcollection.compon
     LocationComponent,
     HomeComponent,
     StoreComponent,
-    KcollectionComponent
+    KcollectionComponent,
+    LcollectionComponent
   ],
   imports: [
     BrowserModule,

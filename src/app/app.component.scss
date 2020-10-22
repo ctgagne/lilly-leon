@@ -1,1 +1,18 @@
+$primary: #d2a37d;
+$component: #aa6639;
+$dark: #302b2f;
+$light: #f4f5f1;
+$white: #fafafa;
+$brown: #482716;
+$beige: #d5b890;
+$gold: #7c6a51;
+$yellow: #f3af46;
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+  max-width: 1440px;
+  margin: auto;
+}
