@@ -1,34 +1,87 @@
-<div class="location">
-  <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.656301519674!2d13.303211215998488!3d52.503460845206945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850dd8654a5fd%3A0xaf3717e6d0b2fe32!2sLilly%20und%20Leon!5e0!3m2!1sen!2sde!4v1603214308250!5m2!1sen!2sde"
-      width="600"
-      height="450"
-      frameborder="0"
-      style="border: 0"
-      allowfullscreen=""
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
+<div class="location-wrapper">
+  <div class="locations">
+    <a [ngxScrollTo]="'#mommsenstr'"><h3>Mommsenstraße 41</h3></a>
+    <a [ngxScrollTo]="'#grunewaldstr'"><h3>Grunewaldstraße 9</h3></a>
   </div>
-  <div class="details">
-    <div class="address">
-      <h4>LOCATION</h4>
-      <p>
-        Mommsenstraße 41 <br />
-        10629 Berlin
-      </p>
-      <p>+49 030 55959265</p>
+  <div id="mommsenstr" class="location">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.656301519674!2d13.303211215998488!3d52.503460845206945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850dd8654a5fd%3A0xaf3717e6d0b2fe32!2sLilly%20und%20Leon!5e0!3m2!1sen!2sde!4v1603214308250!5m2!1sen!2sde"
+        width="800"
+        height="500"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
     </div>
-    <div class="hours">
-      <h4>HOURS</h4>
-      <p>Monday 11am–5pm</p>
-      <p>Tuesday 11am–5pm</p>
-      <p>Wednesday 11am–5pm</p>
-      <p>Thursday 11am–5pm</p>
-      <p>Friday 11am–5pm</p>
-      <p>Saturday 11am–2pm</p>
-      <p>Sunday Closed</p>
+    <div class="details">
+      <div class="address">
+        <h4>LOCATION</h4>
+        <p>
+          Mommsenstraße 41 <br />
+          10629 Berlin
+        </p>
+        <p>+49 030 55959265</p>
+      </div>
+      <div class="hours">
+        <h4>HOURS</h4>
+        <p>Monday 11am–5pm</p>
+        <p>Tuesday 11am–5pm</p>
+        <p>Wednesday 11am–5pm</p>
+        <p>Thursday 11am–5pm</p>
+        <p>Friday 11am–5pm</p>
+        <p>Saturday 11am–2pm</p>
+        <p>Sunday Closed</p>
+      </div>
     </div>
+  </div>
+  <div class="loc-pictures">
+    <div class="img">Pic 1</div>
+    <div class="img">Pic 2</div>
+    <div class="img">Pic 3</div>
+    <div class="img">Pic 4</div>
+  </div>
+
+  <div id="grunewaldstr" class="location">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4586.076922802096!2d13.35622941612363!3d52.49018610218194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85046dc358c6d%3A0xb54903c05e18a074!2sGrunewaldstra%C3%9Fe%209%2C%2010823%20Berlin!5e0!3m2!1sen!2sde!4v1603377341557!5m2!1sen!2sde"
+        width="800"
+        height="500"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+    <div class="details">
+      <div class="address">
+        <h4>LOCATION</h4>
+        <p>
+          Grunewaldstraße 9 <br />
+          10823 Berlin
+        </p>
+        <p>+49 030 55959265</p>
+      </div>
+      <div class="hours">
+        <h4>HOURS</h4>
+        <p>Monday 11am–5pm</p>
+        <p>Tuesday 11am–5pm</p>
+        <p>Wednesday 11am–5pm</p>
+        <p>Thursday 11am–5pm</p>
+        <p>Friday 11am–5pm</p>
+        <p>Saturday 11am–2pm</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+  </div>
+  <div class="loc-pictures">
+    <div class="img">Pic 1</div>
+    <div class="img">Pic 2</div>
+    <div class="img">Pic 3</div>
+    <div class="img">Pic 4</div>
   </div>
 </div>

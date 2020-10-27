@@ -8,11 +8,15 @@ $beige: #d5b890;
 $gold: #7c6a51;
 $yellow: #f3af46;
 
+.location-wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .location {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 120px);
 }
 
 .map-container {
@@ -44,5 +48,98 @@ iframe {
     padding: 2px;
     margin: 0;
     color: $gold;
+  }
+}
+
+.locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  a {
+    color: $brown;
+    &:hover {
+      color: $dark;
+      text-decoration: underline;
+    }
+  }
+  h3 {
+    margin: 2rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+  }
+}
+.loc-pictures {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  .img {
+    width: 200px;
+    height: 250px;
+    background-color: $yellow;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .location {
+    flex-direction: column;
+  }
+  .locations a h3 {
+    font-size: 0.8rem;
+  }
+  .details {
+    flex-direction: row;
+    .address,
+    .hours {
+      text-align: center;
+      vertical-align: middle;
+      width: max-content;
+      h4 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  iframe {
+    width: 100vw;
+    padding: 0.5rem;
+  }
+  .loc-pictures {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    .img {
+      width: 200px;
+      height: 200px;
+      background-color: $yellow;
+      margin: 0.1rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .location {
+    flex-direction: column;
+  }
+  .locations a h3 {
+    margin: 1rem;
+  }
+  .details {
+    flex-direction: row;
+    .address,
+    .hours {
+      margin: 0.2rem;
+      padding: 0.5rem;
+      h4 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
   }
 }

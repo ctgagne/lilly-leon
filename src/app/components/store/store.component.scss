@@ -1,0 +1,47 @@
+$primary: #d2a37d;
+$component: #aa6639;
+$dark: #302b2f;
+$light: #f4f5f1;
+$white: #fafafa;
+$brown: #482716;
+$beige: #d5b890;
+$gold: #7c6a51;
+$yellow: #f3af46;
+
+.store-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.collections {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-nav {
+  border-right: 2px solid $gold;
+  margin-top: 5rem;
+  padding: 1rem;
+  h3 {
+    font-family: "Playfair Display", serif;
+    text-decoration: underline;
+    color: $dark;
+  }
+}
+
+@media (max-width: 520px) {
+  .store-wrapper {
+    flex-direction: column;
+    .store-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        margin: 0.5rem;
+      }
+    }
+  }
+}

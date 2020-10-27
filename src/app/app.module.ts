@@ -10,7 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { StoreComponent } from './components/store/store.component';
 import { KcollectionComponent} from './components/kcollection/kcollection.component';
 import { LcollectionComponent } from './components/lcollection/lcollection.component'
-
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,12 @@ import { LcollectionComponent } from './components/lcollection/lcollection.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot(),
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }
