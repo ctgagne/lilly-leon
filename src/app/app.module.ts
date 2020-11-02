@@ -12,6 +12,8 @@ import { KcollectionComponent} from './components/kcollection/kcollection.compon
 import { LcollectionComponent } from './components/lcollection/lcollection.component'
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ImageLightboxComponent } from './components/image-lightbox/image-lightbox.component';
+import { ImageService } from './image.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     HomeComponent,
     StoreComponent,
     KcollectionComponent,
-    LcollectionComponent
+    LcollectionComponent,
+    ImageLightboxComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,9 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     MDBBootstrapModule.forRoot(),
     ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    ImageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

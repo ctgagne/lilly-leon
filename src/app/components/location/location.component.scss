@@ -69,17 +69,7 @@ iframe {
     font-size: 1.2rem;
   }
 }
-.loc-pictures {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  .img {
-    width: 200px;
-    height: 250px;
-    background-color: $yellow;
-    margin: 1rem;
-  }
-}
+
 
 @media (max-width: 1024px) {
   .location {
