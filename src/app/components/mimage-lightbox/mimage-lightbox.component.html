@@ -1,0 +1,29 @@
+<div class="loc-pictures">
+  <div class="img" *ngFor="let mimage of mimages; let i = index">
+    <img
+      src="{{ mimage.url }}"
+      alt="Grunewaldstraße"
+      (click)="openModal(); currentSlide(i + 1)"
+    />
+  </div>
+</div>
+
+<div id="mimgModal" class="slide-modal">
+  <span class="close cursor" (click)="closeModal()">&times;</span>
+  <div class="slide-modal-content">
+    <div class="mimg-slides" *ngFor="let mimage of mimages; let i = index">
+      <img src="{{ mimage.url }}" />
+    </div>
+    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+    <!-- <div class="image-row">
+      <div class="image-column" *ngFor="let image of images; let i = index">
+        <img
+          class="images"
+          (click)="currentSlide(i + 1)"
+          src="{{ image.url }}"
+        />
+      </div>
+    </div> -->
+  </div>
+</div>

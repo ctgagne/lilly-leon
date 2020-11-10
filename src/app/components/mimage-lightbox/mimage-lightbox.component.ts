@@ -1,28 +1,27 @@
-import { Component, Input, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-image-lightbox',
-  templateUrl: './image-lightbox.component.html',
-  styleUrls: ['./image-lightbox.component.scss'],
+  selector: 'app-mimage-lightbox',
+  templateUrl: './mimage-lightbox.component.html',
+  styleUrls: ['./mimage-lightbox.component.scss'],
 })
-export class ImageLightboxComponent implements OnInit {
-
-  @Input() images: [];
+export class MimageLightboxComponent implements OnInit {
+  @Input() mimages: [];
 
   slideIndex = 0;
 
-  constructor(){}
+  constructor() {}
 
-  ngOnInit(): void{}
+  ngOnInit(): void {
+  }
 
 
   public openModal(): void {
-    document.getElementById('imgModal').style.display = 'flex';
+    document.getElementById('mimgModal').style.display = 'flex';
   }
 
   public closeModal(): void {
-    document.getElementById('imgModal').style.display = 'none';
+    document.getElementById('mimgModal').style.display = 'none';
   }
 
   public plusSlides(n): void {
@@ -37,7 +36,7 @@ export class ImageLightboxComponent implements OnInit {
     const n = slideIndex;
     let i;
     const slides = document.getElementsByClassName(
-      'img-slides'
+      'mimg-slides'
     ) as HTMLCollectionOf<HTMLElement>;
     const dots = document.getElementsByClassName('images') as HTMLCollectionOf<
       HTMLElement
